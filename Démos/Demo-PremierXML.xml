@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<demos>
+    <!-- XML pour du formatage de documentation -->
+    <documentation>
+        <titre>Le XML en tant que document :</titre>
+        <textePrincipal>
+            <paragraphe>
+                <format taille="12px" police="Arial" />
+                Le XML est pratique pour encoder des
+                <important>informations formatées!</important>
+                <citationDeSamuel>Ce langage est très permissif</citationDeSamuel>
+            </paragraphe>
+        </textePrincipal>
+    </documentation>
+
+    <!-- XML pour de la transmission de données-->
+    <communication>
+        <transimission>
+            <expediteur>
+                <contact>
+                    <nom>Legrain</nom>
+                    <prenom>Samuel</prenom>
+                    <email>samuel.legrain@bstorm.be</email>
+                    <formateur />
+                </contact>
+            </expediteur>
+            <destinataires>
+                <contact>
+                    <nom>Morre</nom>
+                    <prenom>Thierry</prenom>
+                    <email>thierry.morre@cognitic.be</email>
+                </contact>
+                <contact>
+                    <nom>Person</nom>
+                    <prenom>Michael</prenom>
+                    <email>michael.person@cognitic.be</email>
+                </contact>
+                <contact>
+                    <nom>Beaurive</nom>
+                    <prenom>Aude</prenom>
+                    <email>aude.beaurive@bstorm.be</email>
+                </contact>
+            </destinataires>
+            <dates>
+                <envois>
+                25/08/2022
+            </envois>
+                <reception>
+                26/08/2022
+            </reception>
+            </dates>
+        </transimission>
+        <sujet>Cours d'XML des WAD</sujet>
+        <message>
+        Attention, les WAD on compris que le cours était génial!
+    </message>
+    </communication>
+</demos>

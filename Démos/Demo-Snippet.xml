@@ -1,0 +1,9 @@
+<!-- SNIPPET : Attention, ne fonctionne qu'avec Red Hat -->
+<!-- ? + tab -->
+<?xml version="1.1" encoding="UTF-8"?>
+<!-- doc + tab -->
+<!DOCTYPE root-element [
+    <!ELEMENT root-element (#PCDATA)>
+]>
+<root-element>
+</root-element>
