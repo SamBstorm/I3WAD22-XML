@@ -1,0 +1,30 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE Demonstration [
+    <!ELEMENT Demonstration (Communications)>
+    <!ELEMENT Communications (Communication*)>
+    <!ELEMENT Communication ((Subject,Message)|(Subject,Memo))>
+    <!ATTLIST Communication sendedDate CDATA #REQUIRED>
+    <!ATTLIST Communication multipleReceiver (true|false) #IMPLIED>
+    <!ATTLIST Communication direction (receive|send|unknow) #REQUIRED>
+    <!ATTLIST Communication id ID #REQUIRED>
+    <!ATTLIST Communication answer IDREF #IMPLIED>
+    <!ELEMENT Subject (#PCDATA)>
+    <!ELEMENT Message (#PCDATA)>
+    <!ELEMENT Memo EMPTY>
+]>
+<Demonstration>
+    <Communications>
+        <Communication id="c1" direction="send" sendedDate="12/05/2022">
+            <Subject></Subject>
+            <Message></Message>
+        </Communication>
+        <Communication id="c2" direction="receive" sendedDate="12/05/2022">
+            <Subject></Subject>
+            <Memo/>
+        </Communication>
+        <Communication id="c3" answer="c1" direction="unknow" sendedDate="12/05/2022" multipleReceiver="true">
+            <Subject></Subject>
+            <Message></Message>
+        </Communication>
+    </Communications>
+</Demonstration>

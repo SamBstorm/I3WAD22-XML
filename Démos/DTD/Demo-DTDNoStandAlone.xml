@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Demonstration SYSTEM "Demo-DTDNoStandAlone.dtd">
+<Demonstration>
+    <Communications>
+        <Communication id="c1" direction="send" sendedDate="12/05/2022">
+            <Subject></Subject>
+            <Message></Message>
+        </Communication>
+        <Communication id="c2" direction="receive" sendedDate="12/05/2022">
+            <Subject></Subject>
+            <Memo/>
+        </Communication>
+        <Communication id="c3" answer="c1" direction="unknow" sendedDate="12/05/2022" multipleReceiver="true">
+            <Subject></Subject>
+            <Message></Message>
+        </Communication>
+    </Communications>
+</Demonstration>
