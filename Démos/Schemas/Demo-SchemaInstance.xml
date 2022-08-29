@@ -1,0 +1,31 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<Interface3 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Demo-SchemaInstance.xsd">
+    <Classe>
+        <Nom>WAD</Nom>
+        <Eleve genre="F" age="29">
+            <Prenom>Menen</Prenom>
+            <Nom>Szymon</Nom>
+            <Contact>
+                <Courriel type="Pro"></Courriel>
+                <Courriel type="Perso"></Courriel>
+                <Courriel type="Autre"></Courriel>
+            </Contact>
+        </Eleve>
+        <Eleve genre="F" age="24">
+            <Prenom>Alessandra</Prenom>
+            <Nom>Rafaele</Nom>
+            <Contact>
+                <Telephone></Telephone>
+            </Contact>
+        </Eleve>
+        <Eleve genre="F">
+            <Prenom>Sara</Prenom>
+            <Nom>Pehlivan</Nom>
+            <Contact>
+                <Telephone></Telephone>
+            </Contact>
+        </Eleve>
+    </Classe>
+</Interface3>

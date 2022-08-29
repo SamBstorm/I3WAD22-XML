@@ -1,0 +1,11 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xag:Annuaire xmlns:xag="MonAgenda">
+    <xag:Personne>
+        <xag:Nom>Legrain</xag:Nom>
+        <xag:Prenom>Samuel</xag:Prenom>
+    </xag:Personne>
+    <xag:Personne>
+        <xag:Nom>Baudoux</xag:Nom>
+        <xag:Prenom>Loïc</xag:Prenom>
+    </xag:Personne>
+</xag:Annuaire>

@@ -1,0 +1,70 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- ELEMENTS -->
+    <xsd:element name="Interface3" type="T_Centre"/>
+    <xsd:element name="Classe" type="T_Cours"/>
+    <xsd:element name="Eleve" type="T_Personne"/>
+    <xsd:element name="Nom" type="T_Nom"/>
+    <xsd:element name="Prenom" type="xsd:string"/>
+    <xsd:element name="Contact" type="T_Contact"/>
+    <xsd:element name="Courriel" type="T_Courriel"/>
+    <xsd:element name="Telephone" type="xsd:string"/>
+    <!-- TYPES -->
+    <xsd:complexType name="T_Centre">
+        <xsd:sequence>
+            <xsd:element ref="Classe"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="T_Personne">
+        <xsd:sequence>
+            <xsd:element ref="Prenom"/>
+            <xsd:element ref="Nom"/>
+            <xsd:element ref="Contact"/>
+        </xsd:sequence>
+        <xsd:attribute name="genre" type="T_HommeOuFemme" use="required"/>
+        <xsd:attribute name="age" type="T_Age" default="30"/>
+    </xsd:complexType>
+    <xsd:complexType name="T_Cours">
+            <xsd:sequence>
+                <xsd:element ref="Nom"/>
+                <xsd:element ref="Eleve" minOccurs="0" maxOccurs="25"/>
+            </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="T_Contact">
+        <xsd:choice>
+            <xsd:element ref="Courriel" minOccurs="3" maxOccurs="3"/>
+            <xsd:element ref="Telephone"/>
+        </xsd:choice>
+    </xsd:complexType>
+    <xsd:simpleType name="T_HommeOuFemme">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="H"/>
+            <xsd:enumeration value="F"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="T_Age">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:maxInclusive value="100"/>
+            <xsd:minInclusive value="18"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="T_Courriel">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="type" type="T_CourrielChoice" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:simpleType name="T_CourrielChoice">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Pro"/>
+            <xsd:enumeration value="Perso"/>
+            <xsd:enumeration value="Autre"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="T_Nom">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="16"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
