@@ -1,0 +1,46 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<Annuaire>
+    <Personne genre="F">
+        <Nom>Beurive</Nom>
+        <Prenom>Aude</Prenom>
+        <Adresse>
+            <Rue>Avenue des cerisiers</Rue>
+            <Numero>255</Numero>
+            <Boite>16</Boite>
+            <CodePostal>1000</CodePostal>
+            <Ville>Brussel</Ville>
+            <Pays>BELGIUM</Pays>
+        </Adresse>
+        <Telephones>
+            <Telephone type="Pro">+3280033800</Telephone>
+            <Telephone type="Perso">+3280033800</Telephone>
+            <Telephone type="Urgence">+32100000001</Telephone>
+        </Telephones>
+        <Courriels>
+            <Courriel type="Pro">aude.beurive@bstorm.be</Courriel>
+            <Courriel type="Pro2">aude.beurive@cognitic.be</Courriel>
+        </Courriels>
+    </Personne>
+    <Personne genre="M">
+        <Nom>Legrain</Nom>
+        <Prenom>Samuel</Prenom>
+        <Adresse>
+            <Rue>Rue des grenadiers</Rue>
+            <Numero>8</Numero>
+            <Boite/>
+            <CodePostal>6000</CodePostal>
+            <Ville>Charleroi</Ville>
+            <Pays>BELGIUM</Pays>
+        </Adresse>
+        <Telephones>
+            <Telephone type="Pro">+3280033800</Telephone>
+            <Telephone type="Perso">+3280033800</Telephone>
+            <Telephone type="Urgence">+32100000001</Telephone>
+        </Telephones>
+        <Courriels>
+            <Courriel type="Pro">samuel.legrain@bstorm.be</Courriel>
+            <Courriel type="Perso">noob_killer_1987@live.be</Courriel>
+        </Courriels>
+    </Personne>
+</Annuaire>

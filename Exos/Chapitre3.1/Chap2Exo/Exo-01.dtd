@@ -1,0 +1,14 @@
+<!ELEMENT Livres (Livre*)>
+<!ELEMENT Livre (Titre,Auteur,Genre,DatePublication,PremierDeLaCollection?)>
+<!ELEMENT Titre (Principal,Sous-titre?)>
+<!ELEMENT Principal (#PCDATA)>
+<!ELEMENT Sous-titre (#PCDATA)>
+<!ELEMENT Auteur (Nom, Prenom)>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Prenom (#PCDATA)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT DatePublication (Jour,Mois,Annee)>
+<!ELEMENT Jour (#PCDATA)>
+<!ELEMENT Mois (#PCDATA)>
+<!ELEMENT Annee (#PCDATA)>
+<!ELEMENT PremierDeLaCollection (Principal?, Sous-titre?)>
