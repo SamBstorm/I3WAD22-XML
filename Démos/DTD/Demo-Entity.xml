@@ -1,0 +1,11 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE Tests [
+    <!ELEMENT Tests (Test)>
+    <!ELEMENT Test (#PCDATA)>
+    <!ENTITY myEntity "&lt;Test Réussi!&gt;">
+]>
+<Tests>
+    <Test>
+        &myEntity;
+    </Test>
+</Tests>
