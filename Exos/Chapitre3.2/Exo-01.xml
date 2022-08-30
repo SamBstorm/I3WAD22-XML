@@ -1,0 +1,69 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<Livres xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Exo-01.xsd">
+    <Livre>
+        <Titre>
+            <Principal>
+                Harry Potter
+            </Principal>
+            <Sous-titre>
+                à l'école des sorciers
+            </Sous-titre>
+        </Titre>
+        <Auteur>
+            <Nom>Rowling</Nom>
+            <Prenom>J.K.</Prenom>
+        </Auteur>
+        <Genre>Fantastique</Genre>
+        <DatePublication>
+            <Jour>26</Jour>
+            <Mois>6</Mois>
+            <Annee>1997</Annee>
+        </DatePublication>
+        <PremierDeLaCollection/>
+    </Livre>
+    <Livre>
+        <Titre>
+            <Principal>
+                Harry Potter
+            </Principal>
+            <Sous-titre>
+                et la chambre des secrets
+            </Sous-titre>
+        </Titre>
+        <Auteur>
+            <Nom>Rowling</Nom>
+            <Prenom>J.K.</Prenom>
+        </Auteur>
+        <Genre>Fantastique</Genre>
+        <DatePublication>
+            <Jour>26</Jour>
+            <Mois>6</Mois>
+            <Annee>1998</Annee>
+        </DatePublication>
+        <PremierDeLaCollection>
+            <Principal>
+                Harry Potter
+            </Principal>
+            <Sous-titre>
+                à l'école des sorciers
+            </Sous-titre>
+        </PremierDeLaCollection>
+    </Livre>
+    <Livre>
+        <Titre>
+            <Principal>
+                La bière pour les nuls
+            </Principal>
+        </Titre>
+        <Auteur>
+            <Nom>Nathchel</Nom>
+            <Prenom>Marty</Prenom>
+        </Auteur>
+        <Genre>Education</Genre>
+        <DatePublication>
+            <Jour>15</Jour>
+            <Mois>10</Mois>
+            <Annee>2020</Annee>
+        </DatePublication>
+    </Livre>
+</Livres>

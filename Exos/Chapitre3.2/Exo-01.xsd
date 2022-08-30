@@ -1,0 +1,77 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- ELEMENTS -->
+    <xsd:element name="Livres" type="T_Livres"/>
+    <xsd:element name="Livre" type="T_Livre"/>
+    <xsd:element name="Titre" type="T_Titre"/>
+    <xsd:element name="Principal" type="xsd:string"/>
+    <xsd:element name="Sous-titre" type="xsd:string"/>
+    <xsd:element name="Auteur" type="T_Auteur"/>
+    <xsd:element name="Nom" type="xsd:string"/>
+    <xsd:element name="Prenom" type="xsd:string"/>
+    <xsd:element name="Genre" type="xsd:string"/>
+    <xsd:element name="DatePublication" type="T_Date"/>
+    <xsd:element name="Jour" type="T_Jour"/>
+    <xsd:element name="Mois" type="T_Mois"/>
+    <xsd:element name="Annee" type="T_Annee"/>
+    <xsd:element name="PremierDeLaCollection" type="T_Collection"/>
+    <!-- TYPES -->
+    <!-- SIMPLES -->
+    <xsd:simpleType name="T_Jour">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxExclusive value="31"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="T_Mois">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxExclusive value="12"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="T_Annee">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:minInclusive value="1900"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <!-- COMPLEXES -->
+    <xsd:complexType name="T_Livres">
+        <xsd:sequence>
+            <xsd:element ref="Livre" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="T_Livre">
+        <xsd:sequence>
+            <xsd:element ref="Titre"/>
+            <xsd:element ref="Auteur"/>
+            <xsd:element ref="Genre"/>
+            <xsd:element ref="DatePublication"/>
+            <xsd:element ref="PremierDeLaCollection" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="T_Titre">
+        <xsd:sequence>
+            <xsd:element ref="Principal"/>
+            <xsd:element ref="Sous-titre" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="T_Auteur">
+        <xsd:sequence>
+            <xsd:element ref="Nom"/>
+            <xsd:element ref="Prenom"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="T_Date">
+        <xsd:sequence>
+            <xsd:element ref="Jour"/>
+            <xsd:element ref="Mois"/>
+            <xsd:element ref="Annee"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="T_Collection">
+        <xsd:sequence>
+            <xsd:element ref="Principal" minOccurs="0"/>
+            <xsd:element ref="Sous-titre" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
